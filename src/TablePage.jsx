@@ -1,6 +1,8 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAnglesLeft } from '@fortawesome/free-solid-svg-icons'
 
 const TablePage = () => {
   
@@ -45,6 +47,7 @@ const TablePage = () => {
           </tr>
         </tbody>
       </table>
+      <button type="button" onClick={()=>navigate("/")} style={{borderRadius:"8px"}}><FontAwesomeIcon icon={faAnglesLeft} /> Back</button>
       </div>
       </div>
     </div>

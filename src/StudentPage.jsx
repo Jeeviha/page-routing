@@ -1,8 +1,13 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAnglesLeft } from '@fortawesome/free-solid-svg-icons'
 
 const StudentPage = () => {
+
+  const navigate=useNavigate();
+
   const students=
     {
       "Angi":{"reg_no":101,"name":"Angi","Dept":"B COm","dob":"27-03-2005","address":"Chennai",},
@@ -51,6 +56,7 @@ const StudentPage = () => {
         </tr>
         </tbody>
       </table>
+      <button type="button" onClick={()=>navigate("/student")} style={{borderRadius:"8px"}}><FontAwesomeIcon icon={faAnglesLeft} /> Back</button>
       </div>
       </div>
       </div>
