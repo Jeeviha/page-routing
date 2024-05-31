@@ -10,11 +10,11 @@ const StudentPage = () => {
 
   const students=
     {
-      "Angi":{"reg_no":101,"name":"Angi","Dept":"B COm","dob":"27-03-2005","address":"Chennai",},
-      "Dharr":{"reg_no":102,"name":"Dharr","Dept":"Bsc CS","dob":"11-03-2005","address":"Viluppuram",},
-      "Guru":{"reg_no":103,"name":"Guru","Dept":"Bsc Maths","dob":"23-03-2005","address":"Thirunelveli",},
-      "Jack":{"reg_no":104,"name":"Jack","Dept":"BCA","dob":"21-07-2005","address":"Namakkal",},
-      "Sam":{"reg_no":105,"name":"Sam","Dept":"BCA","dob":"09-12-2005","address":"Thrichy",}
+      "Angi":{"reg_no":101,"name":"Angi","Dept":"B COm","dob":"27-03-2005","address":"Chennai"},
+      "Dharr":{"reg_no":102,"name":"Dharr","Dept":"Bsc CS","dob":"11-03-2005","address":"Viluppuram"},
+      "Guru":{"reg_no":103,"name":"Guru","Dept":"Bsc Maths","dob":"23-03-2005","address":"Thirunelveli"},
+      "Jack":{"reg_no":104,"name":"Jack","Dept":"BCA","dob":"21-07-2005","address":"Namakkal"},
+      "Sam":{"reg_no":105,"name":"Sam","Dept":"BCA","dob":"09-12-2005","address":"Trichy"}
     }
   const {name}=useParams();   //extracts Student name from url
 
